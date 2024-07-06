@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(224, 155, 64);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+#title {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 2em;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+}
+
+#startButton {
+  background-color: rgb(42, 165, 73);
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  background-color: #00FF00;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.cell {
+  background-color: aliceblue;
+  border: 5px solid black;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  aspect-ratio: 1; /* Mantiene las celdas cuadradas */
+}
+
+.cell.X {
+  color: yellow;
+}
+
+.cell.O {
+  color: blue;
+}
+
+.cell.winner {
+  border-color: red;
+}
+
+#message {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+h1 {
+  background-color: greenyellow;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  #title {
+    font-size: 2.5em;
+  }
+
+  .cell {
+    font-size: 3em;
+  }
+
+  #startButton {
+    font-size: 1.5em;
+  }
+
+  #message {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 1024px) {
+  #title {
+    font-size: 3em;
+  }
+
+  .cell {
+    font-size: 4em;
+  }
+
+  #startButton {
+    font-size: 2em;
+  }
+
+  #message {
+    font-size: 2em;
+  }
+}
+
+.icoest1, .icoest2, .icoest3, .icoest4, .icoest5, .icoest6, .icoest7, .icoest8, .icoest9, .icoest10, .icoest11, .icoest12 {
+  position: absolute;
+  font-size: 2em;
+}
+
+.icoest1 {
+  bottom: 30px;
+  left: 30px;
+  color: #00FF00;
+}
+
+.icoest2 {
+  bottom: 300px;
+  right: 40px;
+  color: red;
+}
+
+.icoest3 {
+  bottom: 500px;
+  right: 40px;
+  color: green;
+}
+
+.icoest4 {
+  bottom: 300px;
+  right: 40px;
+  color: yellow;
+}
+
+.icoest5 {
+  bottom: 400px;
+  left: 500px;
+  color: palevioletred;
+}
+
+.icoest6 {
+  bottom: 300px;
+  right: 500px;
+  color: purple;
+}
+
+.icoest7 {
+  bottom: 500px;
+  left: 200px;
+  color: royalblue;
+}
+
+.icoest8 {
+  bottom: 400px;
+  right: 200px;
+  color: blue;
+}
+
+.icoest9 {
+  bottom: 500px;
+  left: 300px;
+  color: fuchsia;
+}
+
+.icoest10 {
+  bottom: 400px;
+  right: 300px;
+  color: rosybrown;
+}
+
+.icoest11 {
+  bottom: 200px;
+  left: 400px;
+  color: chartreuse;
+}
+
+.icoest12 {
+  bottom: 100px;
+  right: 400px;
+  color: greenyellow;
+}
